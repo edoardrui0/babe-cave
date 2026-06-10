@@ -1,0 +1,819 @@
+---
+// Utils
+import { getImage } from "astro:assets";
+
+// Components
+import BaseLayout from "@layouts/BaseLayout.astro";
+import Gallery2243 from "@components/Gallery/Gallery-2243.astro";
+import SBS37 from "@components/SideBySide/sbs-37.astro";
+import CTA697 from "@components/CTA/CTA-697.astro";
+
+// Images
+import landingImage from "@assets/images/landing.jpg";
+const optimizedImage = await getImage({ src: landingImage, format: "webp" });
+---
+
+<BaseLayout
+	title="Services"
+	description="See the full menu of hair and beauty services Bri offers at Babe Cave in Land O' Lakes, FL, including color, cuts, treatments, extensions, and waxing."
+	heroImage={optimizedImage}
+>
+	<div style="padding-top: 10rem; background-color: #fbf5f1">
+		<Gallery2243 />
+	</div>
+	<SBS37 />
+	<!-- ============================================ -->
+	<!--                  Menu Group                  -->
+	<!-- ============================================ -->
+
+	<div id="cs-menu-group-1037">
+		<div class="cs-container">
+			<div class="cs-content">
+				<picture class="cs-icon-wrapper">
+					<img
+						class="cs-icon"
+						decoding="async"
+						src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Ffancy-divider.svg"
+						alt="divider"
+						width="181"
+						height="36"
+						aria-hidden="true"
+					/>
+				</picture>
+				<h2 class="cs-title">Our Services</h2>
+				<div class="cs-button-group">
+					<button
+						class="cs-button cs-active"
+						data-filter="one"
+						onclick="window.location.href='#cs-menu-group';"
+					>
+						Color
+					</button>
+					<button
+						class="cs-button"
+						data-filter="two"
+						onclick="window.location.href='#cs-menu-group';"
+					>
+						Cut
+					</button>
+					<button
+						class="cs-button"
+						data-filter="three"
+						onclick="window.location.href='#cs-menu-group';"
+					>
+						Treatment
+					</button>
+					<button
+						class="cs-button"
+						data-filter="four"
+						onclick="window.location.href='#cs-menu-group';"
+					>
+						Extensions
+					</button>
+					<button
+						class="cs-button"
+						data-filter="five"
+						onclick="window.location.href='#cs-menu-group';"
+					>
+						Natural Hair
+					</button>
+					<button
+						class="cs-button"
+						data-filter="six"
+						onclick="window.location.href='#cs-menu-group';"
+					>
+						Waxing
+					</button>
+					<button
+						class="cs-button"
+						data-filter="seven"
+						onclick="window.location.href='#cs-menu-group';"
+					>
+						Consultation
+					</button>
+				</div>
+			</div>
+			<!--Color-->
+			<div id="cs-menu1-1037" class="cs-menu-group" data-category="one">
+				<section class="cs-menu">
+					<div class="cs-container">
+						<ul class="cs-card-group">
+							<li class="cs-item">
+								<div class="cs-info">
+									<h3 class="cs-h3">
+										<span class="cs-name">Balayage</span>
+									</h3>
+									<p class="cs-price">$160&ndash;$200+ &middot; 3h</p>
+									<p class="cs-item-p">
+										Hand-painted color that builds soft, sun-kissed dimension
+										and grows out beautifully.
+									</p>
+								</div>
+							</li>
+							<li class="cs-item">
+								<div class="cs-info">
+									<h3 class="cs-h3">
+										<span class="cs-name">Highlights</span>
+									</h3>
+									<p class="cs-price">$160&ndash;$200+ &middot; 2h</p>
+									<p class="cs-item-p">
+										Brightening pieces that add depth, movement, and shine to
+										your color.
+									</p>
+								</div>
+							</li>
+							<li class="cs-item">
+								<div class="cs-info">
+									<h3 class="cs-h3">
+										<span class="cs-name">Partial Highlight</span>
+									</h3>
+									<p class="cs-price">$100&ndash;$125+ &middot; 2h</p>
+									<p class="cs-item-p">
+										A lighter take on highlights, focused right where you want
+										the most brightness.
+									</p>
+								</div>
+							</li>
+							<li class="cs-item">
+								<div class="cs-info">
+									<h3 class="cs-h3">
+										<span class="cs-name">Color</span>
+									</h3>
+									<p class="cs-price">$48&ndash;$60+ &middot; 1h</p>
+									<p class="cs-item-p">
+										All-over color for a fresh base or a whole new shade.
+									</p>
+								</div>
+							</li>
+							<li class="cs-item">
+								<div class="cs-info">
+									<h3 class="cs-h3">
+										<span class="cs-name">Color Correction</span>
+									</h3>
+									<p class="cs-price">Varies &middot; 3h</p>
+									<p class="cs-item-p">
+										Fixing brassiness or color that didn't turn out right, so
+										your hair feels like you again.
+									</p>
+								</div>
+							</li>
+							<li class="cs-item">
+								<div class="cs-info">
+									<h3 class="cs-h3">
+										<span class="cs-name">Freestyle Color</span>
+									</h3>
+									<p class="cs-price">Varies &middot; 2h 30min</p>
+									<p class="cs-item-p">
+										Fully custom color, created around exactly what you're
+										picturing.
+									</p>
+								</div>
+							</li>
+							<li class="cs-item">
+								<div class="cs-info">
+									<h3 class="cs-h3">
+										<span class="cs-name">Root Touch-Up</span>
+									</h3>
+									<p class="cs-price">$56&ndash;$70+ &middot; 1h 30min</p>
+									<p class="cs-item-p">
+										Keeping your color fresh and your blend seamless between
+										visits.
+									</p>
+								</div>
+							</li>
+							<li class="cs-item">
+								<div class="cs-info">
+									<h3 class="cs-h3">
+										<span class="cs-name">Toner</span>
+									</h3>
+									<p class="cs-price">$36&ndash;$45+ &middot; 30min</p>
+									<p class="cs-item-p">
+										The finishing touch that takes blonde from brassy to
+										buttery.
+									</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</div>
+			<!--Cut-->
+			<div id="cs-menu2-1037" class="cs-menu-group" data-category="two">
+				<section class="cs-menu">
+					<div class="cs-container">
+						<ul class="cs-card-group">
+							<li class="cs-item">
+								<div class="cs-info">
+									<h3 class="cs-h3">
+										<span class="cs-name">Female Haircut</span>
+									</h3>
+									<p class="cs-price">$52&ndash;$65+ &middot; 40min</p>
+									<p class="cs-item-p">
+										A custom cut shaped around your face, your hair type, and
+										how you actually live, from butterfly layers and shag to a
+										lob, blowout, and style.
+									</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</div>
+			<!--Treatment-->
+			<div id="cs-menu3-1037" class="cs-menu-group" data-category="three">
+				<section class="cs-menu">
+					<div class="cs-container">
+						<ul class="cs-card-group">
+							<li class="cs-item">
+								<div class="cs-info">
+									<h3 class="cs-h3">
+										<span class="cs-name">Brazilian Blowout</span>
+									</h3>
+									<p class="cs-price">$220&ndash;$275+ &middot; 2h</p>
+									<p class="cs-item-p">
+										Smooths frizz and leaves your hair shiny, soft, and easy to
+										manage.
+									</p>
+								</div>
+							</li>
+							<li class="cs-item">
+								<div class="cs-info">
+									<h3 class="cs-h3">
+										<span class="cs-name">Keratin Treatment</span>
+									</h3>
+									<p class="cs-price">$220&ndash;$275+ &middot; 2h</p>
+									<p class="cs-item-p">
+										Strengthens and softens hair from the inside out for a
+										healthier feel.
+									</p>
+								</div>
+							</li>
+							<li class="cs-item">
+								<div class="cs-info">
+									<h3 class="cs-h3">
+										<span class="cs-name">Perms</span>
+									</h3>
+									<p class="cs-price">$100 &middot; 2h 30min</p>
+									<p class="cs-item-p">
+										Add lasting curl and texture for a whole new look.
+									</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</div>
+			<!--Extensions-->
+			<div id="cs-menu4-1037" class="cs-menu-group" data-category="four">
+				<section class="cs-menu">
+					<div class="cs-container">
+						<ul class="cs-card-group">
+							<li class="cs-item">
+								<div class="cs-info">
+									<h3 class="cs-h3">
+										<span class="cs-name">Extensions</span>
+									</h3>
+									<p class="cs-price">Varies &middot; 2h</p>
+									<p class="cs-item-p">
+										Add length, fullness, or both with extensions or sew-ins,
+										blended to look completely natural.
+									</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</div>
+			<!--Natural Hair-->
+			<div id="cs-menu5-1037" class="cs-menu-group" data-category="five">
+				<section class="cs-menu">
+					<div class="cs-container">
+						<ul class="cs-card-group">
+							<li class="cs-item">
+								<div class="cs-info">
+									<h3 class="cs-h3">
+										<span class="cs-name">Silk Press</span>
+									</h3>
+									<p class="cs-price">$60&ndash;$75+ &middot; 2h</p>
+									<p class="cs-item-p">
+										A sleek, smooth finish that keeps natural hair healthy and
+										full of shine.
+									</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</div>
+			<!--Waxing-->
+			<div id="cs-menu6-1037" class="cs-menu-group" data-category="six">
+				<section class="cs-menu">
+					<div class="cs-container">
+						<ul class="cs-card-group">
+							<li class="cs-item">
+								<div class="cs-info">
+									<h3 class="cs-h3">
+										<span class="cs-name">Brazilian</span>
+									</h3>
+									<p class="cs-price">$40 &middot; 30min</p>
+									<p class="cs-item-p">
+										Smooth, thorough, and handled with care.
+									</p>
+								</div>
+							</li>
+							<li class="cs-item">
+								<div class="cs-info">
+									<h3 class="cs-h3">
+										<span class="cs-name">Bikini Full</span>
+									</h3>
+									<p class="cs-price">$30 &middot; 30min</p>
+									<p class="cs-item-p">Clean lines without the guesswork.</p>
+								</div>
+							</li>
+							<li class="cs-item">
+								<div class="cs-info">
+									<h3 class="cs-h3">
+										<span class="cs-name">Eyebrow</span>
+									</h3>
+									<p class="cs-price">$10 &middot; 15min</p>
+									<p class="cs-item-p">
+										Shape and definition that frames your whole face.
+									</p>
+								</div>
+							</li>
+							<li class="cs-item">
+								<div class="cs-info">
+									<h3 class="cs-h3">
+										<span class="cs-name">Chin</span>
+									</h3>
+									<p class="cs-price">$10 &middot; 15min</p>
+									<p class="cs-item-p">
+										Quick, easy, and gentle on sensitive skin.
+									</p>
+								</div>
+							</li>
+							<li class="cs-item">
+								<div class="cs-info">
+									<h3 class="cs-h3">
+										<span class="cs-name">Underarm</span>
+									</h3>
+									<p class="cs-price">$15 &middot; 15min</p>
+									<p class="cs-item-p">
+										Smooth results that last longer than shaving.
+									</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</div>
+			<!--Consultation-->
+			<div id="cs-menu7-1037" class="cs-menu-group" data-category="seven">
+				<section class="cs-menu">
+					<div class="cs-container">
+						<ul class="cs-card-group">
+							<li class="cs-item">
+								<div class="cs-info">
+									<h3 class="cs-h3">
+										<span class="cs-name">Consultation</span>
+									</h3>
+									<p class="cs-price">Free &middot; 30min</p>
+									<p class="cs-item-p">
+										A one-on-one conversation about your hair goals before we
+										ever pick up the shears.
+									</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</div>
+			<div class="cs-cta-group">
+				<a href="/contact/" class="cs-button-solid">Book an Appointment</a>
+				<a
+					href="https://booksy.com/en-us/1769740_babe-cave_hair-salon_119784_central-pasco#ba_s=seo"
+					class="cs-button-solid"
+					target="_blank"
+					rel="noopener">Book on Booksy</a
+				>
+			</div>
+		</div>
+	</div>
+
+	<CTA697 />
+</BaseLayout>
+
+<style lang="less">
+	/*-- -------------------------- -->
+<---           Menu             -->
+<--- -------------------------- -*/
+
+	/* Mobile - 360px */
+	@media only screen and (min-width: 0rem) {
+		#cs-menu-group-1037 {
+			text-align: center;
+			height: auto;
+			padding: var(--sectionPadding);
+
+			.cs-container {
+				width: 100%;
+				/* changes to 1280px at tablet */
+				max-width: (550/16rem);
+				margin: auto;
+				/* prevents padding and border from affecting height and width */
+				box-sizing: border-box;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				/* 48px - 64px */
+				gap: clamp(3rem, 6vw, 4rem);
+				position: relative;
+			}
+
+			.cs-content {
+				/* set text align to left if content needs to be left aligned */
+				text-align: center;
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+				/* centers content horizontally, set to flex-start to left align */
+				align-items: center;
+			}
+
+			.cs-icon-wrapper {
+				width: 100%;
+				margin: 0 0 (12/16rem);
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				gap: (16/16rem);
+				position: relative;
+
+				&:before {
+					/* left line */
+					content: "";
+					width: 50%;
+					max-width: (150/16rem);
+					height: 1px;
+					background: #b4b2c7;
+					opacity: 1;
+					position: relative;
+					display: block;
+				}
+
+				&:after {
+					/* right line */
+					content: "";
+					width: 50%;
+					max-width: (150/16rem);
+					height: 1px;
+					background: #b4b2c7;
+					opacity: 1;
+					position: relative;
+					display: block;
+				}
+			}
+
+			.cs-icon {
+				width: 40%;
+				/* 100px - 180px */
+				max-width: clamp(6.25rem, 18vw, 11.25rem);
+				height: auto;
+				/* prevents flexbox from squishing it */
+				flex: none;
+			}
+
+			.cs-title {
+				margin: 0 0 (32/16rem);
+			}
+
+			.cs-hidden {
+				display: none;
+			}
+
+			.cs-button-group {
+				width: auto;
+				max-width: (1000/16rem);
+				margin: 0 (16/16rem);
+				/* 16px - 28px top & bottom */
+				/* 32px - 48px left & right */
+				padding: clamp(1rem, 3vw, 1.75rem) clamp(2rem, 4vw, 3rem);
+				border-radius: (70/16rem);
+				background-color: #f3f3f3;
+				border: 1px solid #b4b2c7;
+				box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+				display: inline-flex;
+				justify-content: center;
+				flex-wrap: wrap;
+				align-items: center;
+				/* 24px - 36px */
+				column-gap: clamp(1.5rem, 2vw, 2.25rem);
+				row-gap: (12/16rem);
+			}
+
+			.cs-button {
+				font-size: (16/16rem);
+				line-height: 1.5em;
+				font-weight: 400;
+				margin: 0;
+				padding: 0;
+				color: #878787;
+				background: transparent;
+				border: none;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				position: relative;
+				transition:
+					color 0.3s,
+					font-weight 0.3s,
+					color 0.3s;
+
+				&:hover {
+					color: var(--primary);
+					cursor: pointer;
+				}
+
+				&:after {
+					/* active state icon */
+					content: "";
+					position: relative;
+					display: block;
+					width: 0;
+					/* 16px - 24px */
+					height: clamp(1rem, 3vw, 1.5rem);
+					background: url("https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Ffancy-icon.svg");
+					background-size: contain;
+					background-position: center;
+					background-repeat: no-repeat;
+					opacity: 0;
+					transition:
+						width 0.3s,
+						opacity 0.3s,
+						margin-left 0.3s;
+				}
+
+				&.cs-active {
+					color: var(--headerColor);
+					font-weight: 700;
+					&:after {
+						width: clamp(1.5625rem, 3vw, 2.25rem);
+						opacity: 1;
+						/* 8px - 16px */
+						margin-left: clamp(0.5rem, 0.5vw, 1rem);
+					}
+				}
+			}
+
+			.cs-menu {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				/* 32px - 64px */
+				gap: clamp(2rem, 6vw, 4rem);
+			}
+
+			.cs-content {
+				/* set text align to left if content needs to be left aligned */
+				text-align: center;
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+				/* centers content horizontally, set to flex-start to left align */
+				align-items: center;
+				position: relative;
+				z-index: 20;
+			}
+
+			.cs-card-group {
+				margin: 0;
+				padding: 0;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				column-gap: (20/16rem);
+				/* 32px - 60px */
+				row-gap: clamp(2rem, 6vw, 3.75rem);
+			}
+
+			.cs-item {
+				list-style: none;
+				width: 100%;
+				max-width: (580/16rem);
+				margin: 0;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				/* 16px - 36px */
+				gap: clamp(1rem, 3vw, 2.25rem);
+			}
+
+			.cs-info {
+				width: 100%;
+				flex: 1;
+				min-width: 0;
+			}
+
+			.cs-h3 {
+				/* 16px - 24px */
+				font-size: clamp(1rem, 2vw, 1.5rem);
+				line-height: 1.2em;
+				font-weight: 700;
+				text-align: left;
+				/* 8px - 16px */
+				margin: 0 0 clamp(0.5rem, 1.5vw, 1rem);
+				color: var(--headerColor);
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				position: relative;
+				gap: (12/16rem);
+
+				&:after {
+					content: "";
+					width: 100%;
+					height: 1px;
+					background: #b4b2c7;
+					opacity: 1;
+					position: relative;
+					display: block;
+					order: 1;
+				}
+			}
+
+			.cs-name {
+				/* 16px - 20px */
+				font-size: clamp(1rem, 2vw, 1.5625rem);
+				line-height: 1.2em;
+				width: auto;
+				max-width: 70%;
+				color: var(--headerColor);
+				flex: none;
+			}
+
+			.cs-price {
+				font-size: (16/16rem);
+				line-height: 1.5em;
+				font-weight: 700;
+				text-align: left;
+				margin: 0 0 (8/16rem);
+				color: var(--primary);
+			}
+
+			.cs-item-p {
+				/* 14px - 16px */
+				font-size: clamp(0.875rem, 2vw, 1rem);
+				line-height: 1.5em;
+				text-align: left;
+				margin: 0;
+				color: var(--bodyTextColor);
+			}
+
+			.cs-button-solid {
+				font-size: (16/16rem);
+				/* 46px - 56px */
+				line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+				text-decoration: none;
+				font-weight: 700;
+				text-align: center;
+				margin: 0;
+				color: #fff;
+				min-width: (150/16rem);
+				padding: 0 (32/16rem);
+				background-color: var(--primary);
+				display: inline-block;
+				position: relative;
+				z-index: 1;
+				/* prevents padding from adding to the width */
+				box-sizing: border-box;
+
+				&:before {
+					content: "";
+					position: absolute;
+					height: 100%;
+					width: 0%;
+					background: #000;
+					opacity: 1;
+					top: 0;
+					left: 0;
+					z-index: -1;
+					transition: width 0.3s;
+				}
+
+				&:hover {
+					&:before {
+						width: 100%;
+					}
+				}
+			}
+
+			.cs-cta-group {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				align-items: center;
+				gap: (16/16rem);
+			}
+		}
+	}
+
+	/* Tablet - 768px */
+	@media only screen and (min-width: 48rem) {
+		#cs-menu-group-1037 {
+			.cs-container {
+				max-width: (1280/16rem);
+			}
+
+			.cs-card-group {
+				flex-direction: row;
+				justify-content: space-between;
+				flex-wrap: wrap;
+				column-gap: (20/16rem);
+			}
+
+			.cs-item {
+				width: 48.5%;
+			}
+
+			.cs-name {
+				width: auto;
+			}
+		}
+	}
+
+	/* Dark Mode */
+	@media only screen and (min-width: 0rem) {
+		body.dark-mode {
+			#cs-menu-group-1037 {
+				background-color: rgba(0, 0, 0, 0.5);
+
+				.cs-button-group {
+					background-color: var(--medium);
+				}
+				.cs-button {
+					color: #fff;
+					&:hover {
+						color: var(--secondary);
+					}
+				}
+				.cs-title,
+				.cs-text,
+				.cs-name,
+				.cs-item-p {
+					color: var(--bodyTextColorWhite);
+				}
+				.cs-text,
+				.cs-item-p {
+					opacity: 0.8;
+				}
+			}
+		}
+	}
+</style>
+
+<script is:inline>
+	class CS_MenuFilter {
+		filtersSelector = ".cs-button";
+		menuSelector = ".cs-menu-group";
+		activeClass = "cs-active";
+		hiddenClass = "cs-hidden";
+
+		constructor() {
+			this.$menus = document.querySelectorAll(this.menuSelector);
+			const $filters = document.querySelectorAll(this.filtersSelector);
+
+			this.onClick($filters[0]);
+
+			for (const $filter of $filters) {
+				$filter.addEventListener("click", () => this.onClick($filter));
+			}
+		}
+
+		onClick($filter) {
+			this.filter($filter.dataset.filter);
+
+			const { activeClass } = this;
+
+			this.$activeFilter?.classList.remove(activeClass);
+			$filter.classList.add(activeClass);
+
+			this.$activeFilter = $filter;
+		}
+
+		filter(filter) {
+			const showAll = filter == "all";
+			const { hiddenClass } = this;
+
+			for (const $menu of this.$menus) {
+				const show = showAll || $menu.dataset.category == filter;
+				$menu.classList.toggle(hiddenClass, !show);
+			}
+		}
+	}
+
+	// Re-run on every navigation since Astro's ClientRouter (View Transitions)
+	// swaps in new DOM nodes without re-executing this script.
+	document.addEventListener("astro:page-load", () => {
+		new CS_MenuFilter();
+	});
+</script>

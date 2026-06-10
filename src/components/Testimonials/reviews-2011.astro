@@ -1,0 +1,506 @@
+---
+import { Picture } from "astro:assets";
+
+import reviews1 from "@assets/images/reviews/reviews-1.jpeg";
+import reviews2 from "@assets/images/reviews/reviews-2.jpeg";
+---
+
+<section id="reviews-2011">
+  <div class="cs-container">
+    <div class="cs-content">
+      <span class="cs-topper">What Guests Are Saying</span>
+      <h2 class="cs-title">Real People, Real Transformations</h2>
+    </div>
+    <ul class="cs-card-group">
+      <li class="cs-item">
+        <div class="cs-review">
+          <div class="cs-flex-group">
+            <img
+              class="cs-item-stars"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gold-stars-alt.svg"
+              alt="stars"
+              width="111"
+              height="21"
+            />
+            <!-- <h3 class="cs-h3">
+              I finally have the buttery blonde I have always wanted
+            </h3> -->
+            <p class="cs-item-text">
+              I’m absolutely obsessed with my hair! Bri gave me the perfect
+              blend, dimension and glow for summer. She seriously brought my
+              vision to life and made me feel so confident and beautiful leaving
+              her chair. What makes this even more special is that this was
+              actually my first time getting my hair done by someone else in
+              several years.
+            </p>
+          </div>
+          <div class="cs-info">
+            <span class="cs-name">Morgan</span>
+          </div>
+        </div>
+        <div class="cs-image-group">
+          <Picture
+            src={reviews1}
+            alt="Smiling Babe Cave client with bouncy curls and warm balayage highlights"
+            width="312"
+            height="411"
+            loading="lazy"
+            decoding="async"
+            pictureAttributes={{ class: "cs-picture" }}
+          />
+          <img
+            class="cs-graphic cs-brown"
+            loading="lazy"
+            decoding="async"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/brown-lines2.svg"
+            alt="graphic"
+            width="131"
+            height="99"
+            aria-hidden="true"
+          />
+          <img
+            class="cs-graphic cs-dots"
+            loading="lazy"
+            decoding="async"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/dot-group.svg"
+            alt="graphic"
+            width="131"
+            height="99"
+            aria-hidden="true"
+          />
+          <img
+            class="cs-graphic cs-leaf"
+            loading="lazy"
+            decoding="async"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/derma-leaf.svg"
+            alt="graphic"
+            width="131"
+            height="99"
+            aria-hidden="true"
+          />
+        </div>
+      </li>
+      <li class="cs-item">
+        <div class="cs-review">
+          <div class="cs-flex-group">
+            <img
+              class="cs-item-stars"
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gold-stars-alt.svg"
+              alt="stars"
+              width="111"
+              height="21"
+            />
+            <!-- <h3 class="cs-h3">
+              First time at Babe Cave and I already have my next appointment
+              booked
+            </h3> -->
+            <p class="cs-item-text">
+              Bri is a literal genius with hair and is super knowledgeable! She
+              showed me the color wheel and explained what is a healthy level to
+              have your hair at and what causes damage over time. Every step of
+              the way, she explained why she was making placements of foils as
+              she was and how she would make the darker pieces look intentional
+              as my hair had become compromised after years of having my hair
+              lifted beyond what is healthy.
+            </p>
+          </div>
+          <div class="cs-info">
+            <span class="cs-name"> Erika </span>
+          </div>
+        </div>
+        <div class="cs-image-group">
+          <Picture
+            src={reviews2}
+            alt="Babe Cave client with sleek, straight blonde hair and dimension"
+            width="312"
+            height="411"
+            loading="lazy"
+            decoding="async"
+            pictureAttributes={{ class: "cs-picture" }}
+          />
+          <img
+            class="cs-graphic cs-brown"
+            loading="lazy"
+            decoding="async"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/brown-lines2.svg"
+            alt="graphic"
+            width="131"
+            height="99"
+            aria-hidden="true"
+          />
+          <img
+            class="cs-graphic cs-dots"
+            loading="lazy"
+            decoding="async"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/dot-group.svg"
+            alt="graphic"
+            width="131"
+            height="99"
+            aria-hidden="true"
+          />
+          <img
+            class="cs-graphic cs-leaf"
+            loading="lazy"
+            decoding="async"
+            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/derma-leaf.svg"
+            alt="graphic"
+            width="131"
+            height="99"
+            aria-hidden="true"
+          />
+        </div>
+      </li>
+    </ul>
+  </div>
+  <img
+    class="cs-flower"
+    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/banner-flower.svg"
+    alt="graphic"
+    loading="lazy"
+    decoding="async"
+    height="143"
+    width="235"
+  />
+</section>
+
+<style lang="less">
+  /*-- -------------------------- -->
+<---           Reviews          -->
+<--- -------------------------- -*/
+
+  /* Mobile - 360px */
+  @media only screen and (min-width: 0rem) {
+    #reviews-2011 {
+      padding: var(--sectionPadding);
+      background-color: #faf6f2;
+      overflow: hidden;
+      position: relative;
+      z-index: 1;
+
+      .cs-container {
+        width: 100%;
+        /* changes to 1280px at desktop */
+        max-width: (584/16rem);
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* 48px - 64px */
+        gap: clamp(3rem, 6vw, 4rem);
+      }
+
+      .cs-content {
+        /* set text align to left if content needs to be left aligned */
+        text-align: center;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .cs-topper {
+        color: var(--secondary);
+      }
+
+      .cs-title {
+        margin: 0;
+      }
+
+      .cs-card-group {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* 32px - 40px */
+        gap: clamp(2rem, 4vw, 2.5rem);
+      }
+
+      .cs-item {
+        /* removed on tablet */
+        max-width: (400/16rem);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: (33/16rem);
+        position: relative;
+
+        /* white background for the card. we do it as a &::before so we can overlap the card under the image */
+        &::before {
+          content: "";
+          width: 100%;
+          background-color: #fff;
+          border-radius: (40/16rem);
+          position: absolute;
+          top: 0;
+          bottom: (240/16rem);
+          left: 0;
+          z-index: -1;
+        }
+      }
+
+      .cs-review {
+        width: 100%;
+        padding: (40/16rem) (16/16rem) 0;
+        border-radius: (40/16rem);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: (40/16rem);
+      }
+
+      .cs-item-stars {
+        width: (111/16rem);
+        height: auto;
+        margin: 0 0 (24/16rem) 0;
+        display: block;
+      }
+
+      .cs-h3 {
+        font-size: (20/16rem);
+        font-weight: 700;
+        line-height: 1.2em;
+        margin: 0 0 (16/16rem);
+        color: var(--headerColor);
+      }
+
+      .cs-item-text {
+        /* 16px - 20px */
+        font-size: clamp(1rem, 2vw, 1.25rem);
+        font-weight: 400;
+        line-height: 1.5em;
+        margin: 0;
+        color: var(--bodyTextColor);
+      }
+
+      .cs-name {
+        font-size: (20/16rem);
+        font-weight: 700;
+        line-height: 1.2em;
+        color: var(--headerColor);
+        display: block;
+      }
+
+      .cs-job {
+        font-size: (16/16rem);
+        font-weight: 400;
+        line-height: 1.5em;
+        color: var(--bodyTextColor);
+        display: block;
+      }
+
+      .cs-image-group {
+        font-size: min(4.02vw, 1rem);
+        width: (274/16em);
+        height: (383/16em);
+        display: block;
+        position: relative;
+        z-index: 1;
+      }
+
+      .cs-picture {
+        width: 100%;
+        height: (382/16em);
+        box-sizing: border-box;
+        background-color: #dab692;
+        overflow: hidden;
+        border: 8px solid #dab692;
+        border-radius: (260/16rem);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          position: absolute;
+          top: 0;
+          left: 0;
+          transition: transform 0.7s;
+        }
+      }
+
+      .cs-graphic {
+        height: auto;
+        position: absolute;
+      }
+
+      .cs-brown {
+        width: (110/16em);
+        height: (116/16em);
+        top: 0;
+        right: 0;
+        z-index: -2;
+        transform: rotate(-140deg);
+      }
+
+      .cs-dots {
+        width: (89/16em);
+        height: (72/16em);
+        top: 0;
+        left: 0;
+        z-index: 1;
+      }
+
+      .cs-leaf {
+        width: (198/16em);
+        height: (153/16em);
+        bottom: 0;
+        left: (-9/16rem);
+        z-index: 1;
+      }
+
+      .cs-flower {
+        /* 121px - 227px */
+        width: clamp(7.57rem, 14vw, 14.1875rem);
+        height: auto;
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -5;
+      }
+    }
+  }
+
+  /* Tablet - 768px */
+  @media only screen and (min-width: 48rem) {
+    #reviews-2011 {
+      .cs-container {
+        max-width: (1280/16rem);
+      }
+
+      .cs-card-group {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+      }
+
+      .cs-item {
+        max-width: none;
+        flex-direction: row;
+        grid-column: span 12;
+        align-items: stretch;
+
+        &::before {
+          width: auto;
+          bottom: 0;
+          left: 0;
+          right: (108/16rem);
+        }
+      }
+
+      .cs-image-group {
+        min-height: (500/16rem);
+        height: auto;
+        flex: none;
+      }
+
+      .cs-picture {
+        height: auto;
+        /* 60px - 80px */
+        top: clamp(3.75rem, 7vw, 5rem);
+        bottom: (80/16em);
+      }
+
+      .cs-dots,
+      .cs-brown {
+        /* 60px - 80px */
+        top: clamp(3.75rem, 7vw, 5rem);
+      }
+
+      .cs-leaf {
+        /* 60px - 80px */
+        bottom: clamp(3.75rem, 7vw, 5rem);
+        top: auto;
+      }
+
+      .cs-review {
+        padding: (40/16rem);
+      }
+    }
+  }
+
+  /* Large Desktop - 1400px */
+  @media only screen and (min-width: 87.5rem) {
+    #reviews-2011 {
+      .cs-card-group {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+        gap: (20/16rem);
+      }
+
+      .cs-item {
+        grid-column: span 6;
+      }
+
+      .cs-info {
+        margin-top: auto;
+      }
+
+      .cs-review {
+        padding-right: 0;
+      }
+    }
+  }
+
+  /* Larger Desktop - 1700px */
+  @media only screen and (min-width: 106.25rem) {
+    #reviews-2011 {
+      .cs-flower {
+        margin-left: (744/16rem);
+        left: 50%;
+      }
+    }
+  }
+
+  /* Dark Mode */
+  @media only screen and (min-width: 0rem) {
+    body.dark-mode {
+      #reviews-2011 {
+        background-color: rgba(0, 0, 0, 0.2);
+
+        .cs-picture {
+          border-color: var(--accent);
+        }
+
+        .cs-title,
+        .cs-h3,
+        .cs-review,
+        .cs-job,
+        .cs-item-text {
+          color: var(--bodyTextColorWhite);
+        }
+
+        .cs-item {
+          &::before {
+            background-color: var(--medium);
+          }
+        }
+
+        .cs-name {
+          color: var(--secondary);
+        }
+
+        .cs-review,
+        .cs-job {
+          opacity: 0.8;
+        }
+
+        .cs-flower {
+          opacity: 0.6;
+        }
+      }
+    }
+  }
+</style>

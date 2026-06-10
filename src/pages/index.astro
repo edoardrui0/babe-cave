@@ -1,0 +1,33 @@
+---
+// Utils
+import { getImage } from "astro:assets";
+
+// Components
+import BaseLayout from "@layouts/BaseLayout.astro";
+import Hero1895 from "@components/Hero/Hero-1895.astro";
+import SBS2295 from "@components/SideBySide/sbs-2295.astro";
+import SBS37 from "@components/SideBySide/sbs-37.astro";
+import Reviews2011 from "@components/Testimonials/reviews-2011.astro";
+import Gallery2243 from "@components/Gallery/Gallery-2243.astro";
+import Steps1893 from "@components/Steps/steps-1893.astro";
+import CTA697 from "@components/CTA/CTA-697.astro";
+
+// Optimize our landing image and pass it as props to the BaseLayout (for preloading) and Banner (for rendering)
+import heroImage from "@assets/images/hero/hero.jpg";
+
+const optimizedHeroImage = await getImage({ src: heroImage, format: "webp" });
+---
+
+<BaseLayout
+	title="Babe Cave | Hair Salon in Land O' Lakes, FL"
+	description="Babe Cave by Bri is a private hair salon suite in Land O' Lakes, FL. Book online or text Bri for cuts, color, balayage, extensions, and more."
+	heroImage={optimizedHeroImage}
+>
+	<Hero1895 image={optimizedHeroImage} />
+	<SBS2295 />
+	<SBS37 />
+	<Reviews2011 />
+	<Gallery2243 />
+	<Steps1893 />
+	<CTA697 />
+</BaseLayout>

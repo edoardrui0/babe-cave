@@ -1,0 +1,398 @@
+---
+// Utils
+import { Picture } from "astro:assets";
+
+// Components
+import BaseLayout from "@layouts/BaseLayout.astro";
+
+// Data
+
+// Images
+import hair1 from "@assets/images/gallery/hair-1.jpeg";
+import hair2 from "@assets/images/gallery/hair-2.jpeg";
+import hair3 from "@assets/images/gallery/hair-3.jpeg";
+import hair4 from "@assets/images/gallery/hair-4.jpeg";
+import hair5 from "@assets/images/gallery/hair-5.jpeg";
+import hair6 from "@assets/images/gallery/hair-6.jpeg";
+import hair7 from "@assets/images/gallery/hair-7.jpeg";
+import hair8 from "@assets/images/gallery/hair-8.jpeg";
+import hair9 from "@assets/images/gallery/hair-9.jpeg";
+import hair10 from "@assets/images/gallery/hair-10.jpeg";
+import hair11 from "@assets/images/gallery/hair-11.jpeg";
+import hair12 from "@assets/images/gallery/hair-12.jpeg";
+import hair13 from "@assets/images/gallery/hair-13.jpeg";
+---
+
+<BaseLayout
+  title="Gallery"
+  description="Browse real hair transformations from Babe Cave in Land O' Lakes, FL. See Bri's blonde work, color, cuts, and extensions, then book your own."
+>
+  <section id="gallery-2234">
+    <div class="cs-container">
+      <div class="cs-content">
+        <div class="cs-flex">
+          <span class="cs-topper">Our Gallery</span>
+          <h2 class="cs-title">
+            Real Hair, Real Results, Straight From the Chair
+          </h2>
+        </div>
+        <div class="cs-flex">
+          <p class="cs-text">
+            Take a look around at the buttery blondes, fresh cuts, seamless
+            extensions, and color transformations Bri has created in her private
+            suite. Want to see your own dream hair here? Follow @babecave.bri on
+            Instagram and book your appointment today.
+          </p>
+        </div>
+      </div>
+      <div class="cs-image-group">
+        <Picture
+          src={hair1}
+          alt="Soft, buttery blonde balayage with seamless dimension"
+          width="380"
+          height="271"
+          loading="lazy"
+          decoding="async"
+          pictureAttributes={{ class: "cs-picture cs-picture-1" }}
+        />
+        <Picture
+          src={hair2}
+          alt="Custom color and toner for a brightened, glowing finish"
+          width="380"
+          height="271"
+          loading="lazy"
+          decoding="async"
+          pictureAttributes={{ class: "cs-picture cs-picture-2" }}
+        />
+        <Picture
+          src={hair3}
+          alt="Fresh cut and blowout with a soft, lived-in look"
+          width="780"
+          height="582"
+          loading="lazy"
+          decoding="async"
+          pictureAttributes={{ class: "cs-picture cs-picture-3" }}
+        />
+        <Picture
+          src={hair4}
+          alt="Seamless extensions for fuller, dreamy hair"
+          width="780"
+          height="582"
+          loading="lazy"
+          decoding="async"
+          pictureAttributes={{ class: "cs-picture cs-picture-4" }}
+        />
+        <Picture
+          src={hair5}
+          alt="Brightening highlights with shine and dimension"
+          width="380"
+          height="271"
+          loading="lazy"
+          decoding="async"
+          pictureAttributes={{ class: "cs-picture cs-picture-5" }}
+        />
+        <Picture
+          src={hair6}
+          alt="Color correction for a seamless, even blend"
+          width="380"
+          height="271"
+          loading="lazy"
+          decoding="async"
+          pictureAttributes={{ class: "cs-picture cs-picture-6" }}
+        />
+        <Picture
+          src={hair7}
+          alt="Custom butterfly layers for a confident, dimensional cut"
+          width="380"
+          height="271"
+          loading="lazy"
+          decoding="async"
+          pictureAttributes={{ class: "cs-picture cs-picture-7" }}
+        />
+        <Picture
+          src={hair8}
+          alt="Root touch-up blended into a soft, buttery blonde"
+          width="380"
+          height="271"
+          loading="lazy"
+          decoding="async"
+          pictureAttributes={{ class: "cs-picture cs-picture-8" }}
+        />
+        <Picture
+          src={hair9}
+          alt="Freestyle color creating dimension and glow"
+          width="780"
+          height="582"
+          loading="lazy"
+          decoding="async"
+          pictureAttributes={{ class: "cs-picture cs-picture-9" }}
+        />
+        <Picture
+          src={hair10}
+          alt="Silk press for smooth, healthy natural hair"
+          width="780"
+          height="582"
+          loading="lazy"
+          decoding="async"
+          pictureAttributes={{ class: "cs-picture cs-picture-10" }}
+        />
+        <Picture
+          src={hair11}
+          alt="Shag cut styled for a soft, lived-in look"
+          width="380"
+          height="271"
+          loading="lazy"
+          decoding="async"
+          pictureAttributes={{ class: "cs-picture cs-picture-11" }}
+        />
+        <Picture
+          src={hair12}
+          alt="Lob haircut with a seamless, healthy blend"
+          width="380"
+          height="271"
+          loading="lazy"
+          decoding="async"
+          pictureAttributes={{ class: "cs-picture cs-picture-12" }}
+        />
+        <Picture
+          src={hair13}
+          alt="Custom blonde with buttery dimension and shine"
+          width="380"
+          height="271"
+          loading="lazy"
+          decoding="async"
+          pictureAttributes={{ class: "cs-picture cs-picture-13" }}
+        />
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style lang="less">
+  /*-- -------------------------- -->
+<---          Gallery           -->
+<--- -------------------------- -*/
+
+  /* Mobile */
+  @media only screen and (min-width: 0rem) {
+    #gallery-2234 {
+      padding: var(--sectionPadding);
+      padding-top: (192/16rem);
+      background-color: #fbf5f1;
+
+      .cs-container {
+        width: 100%;
+        max-width: (1920/16rem);
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        /* 48px - 64px */
+        gap: clamp(3rem, 6vw, 4rem);
+      }
+
+      .cs-content {
+        width: 100%;
+        max-width: (1280/16rem);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: (16/16rem);
+      }
+
+      .cs-title {
+        margin: 0;
+      }
+
+      .cs-image-group {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        /* 132px - 280px */
+        grid-auto-rows: clamp(8.25rem, 20vw, 17.5rem);
+        /* 16px - 20px */
+        gap: clamp(0.5rem, 1.5vw, 1.25rem);
+      }
+
+      .cs-picture {
+        display: block;
+        position: relative;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+      }
+
+      .cs-picture-1 {
+        grid-column: span 6;
+        grid-row: span 1;
+      }
+
+      .cs-picture-2 {
+        grid-column: span 6;
+        grid-row: span 1;
+      }
+
+      .cs-picture-3 {
+        grid-column: span 6;
+        grid-row: span 1;
+      }
+
+      .cs-picture-4 {
+        grid-column: span 6;
+        grid-row: span 1;
+      }
+
+      .cs-picture-5 {
+        grid-column: span 6;
+        grid-row: span 1;
+      }
+
+      .cs-picture-6 {
+        grid-column: span 6;
+        grid-row: span 1;
+      }
+
+      .cs-picture-7 {
+        grid-column: span 12;
+        grid-row: span 2;
+      }
+
+      .cs-picture-8 {
+        grid-column: span 6;
+        grid-row: span 1;
+      }
+
+      .cs-picture-9 {
+        grid-column: span 6;
+        grid-row: span 1;
+      }
+
+      .cs-picture-10 {
+        grid-column: span 6;
+        grid-row: span 1;
+      }
+
+      .cs-picture-11 {
+        grid-column: span 6;
+        grid-row: span 1;
+      }
+
+      .cs-picture-12 {
+        grid-column: span 6;
+        grid-row: span 1;
+      }
+
+      .cs-picture-13 {
+        grid-column: span 6;
+        grid-row: span 1;
+      }
+    }
+  }
+
+  /* Tablet */
+  @media only screen and (min-width: 48rem) {
+    #gallery-2234 {
+      .cs-container {
+        align-items: center;
+      }
+
+      .cs-content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+      }
+
+      .cs-text {
+        max-width: (451/16rem);
+      }
+
+      .cs-flex {
+        min-width: 45%;
+      }
+
+      .cs-picture-1 {
+        grid-column: span 3;
+        grid-row: span 1;
+      }
+
+      .cs-picture-2 {
+        grid-column: span 3;
+        grid-row: span 1;
+      }
+
+      .cs-picture-3 {
+        grid-column: span 3;
+        grid-row: span 1;
+      }
+
+      .cs-picture-4 {
+        grid-column: span 3;
+        grid-row: span 1;
+      }
+
+      .cs-picture-5 {
+        grid-column: span 3;
+        grid-row: span 1;
+      }
+
+      .cs-picture-6 {
+        grid-column: span 6;
+        grid-row: span 2;
+      }
+
+      .cs-picture-7 {
+        grid-column: span 3;
+        grid-row: span 1;
+      }
+
+      .cs-picture-8 {
+        grid-column: span 3;
+        grid-row: span 1;
+      }
+
+      .cs-picture-9 {
+        grid-column: span 3;
+        grid-row: span 1;
+      }
+
+      .cs-picture-10 {
+        grid-column: span 3;
+        grid-row: span 1;
+      }
+
+      .cs-picture-11 {
+        grid-column: span 3;
+        grid-row: span 1;
+      }
+
+      .cs-picture-12 {
+        grid-column: span 3;
+        grid-row: span 1;
+      }
+
+      .cs-picture-13 {
+        grid-column: span 3;
+        grid-row: span 1;
+      }
+    }
+  }
+
+  /* Dark mode */
+  @media only screen and (min-width: 0rem) {
+    body.dark-mode {
+      #gallery-2234 {
+        .cs-title,
+        .cs-text {
+          color: var(--bodyTextColorWhite);
+        }
+      }
+    }
+  }
+</style>
