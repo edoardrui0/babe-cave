@@ -13,7 +13,11 @@ interface Props {
 	heroImage?: HeroImage | ImageMetadata; // Can be optimized hero OR raw ImageMetadata
 }
 
-const { title = SITE.title, description = SITE.description, heroImage } = Astro.props;
+const {
+	title = SITE.title,
+	description = SITE.description,
+	heroImage,
+} = Astro.props;
 
 // Data
 const localBusinessSchema = getLocalBusinessSchema(Astro.url.origin);
@@ -23,7 +27,9 @@ const canonical = Astro.url.href;
 const isHomePage = Astro.url.pathname === "/";
 
 // Format page title with business name (and location if home page)
-const pageTitle = isHomePage ? `${title} | ${BUSINESS.name} | ${BUSINESS.address.city}, ${BUSINESS.address.state}` : `${title} | ${BUSINESS.name}`;
+const pageTitle = isHomePage
+	? `${title} | ${BUSINESS.name} | ${BUSINESS.address.city}, ${BUSINESS.address.state}`
+	: `${title} | ${BUSINESS.name}`;
 
 // OG type is hardcoded since it rarely changes
 const ogType = "website";
@@ -58,7 +64,11 @@ if (heroImage) {
 
 <!-- LocalBusiness Schema (on ALL pages) - customize your JSON-LD structured data:
      https://developers.google.com/search/docs/advanced/structured-data/intro-structured-data  -->
-<script is:inline type="application/ld+json" set:html={JSON.stringify(localBusinessSchema)} />
+<script
+	is:inline
+	type="application/ld+json"
+	set:html={JSON.stringify(localBusinessSchema)}
+/>
 
 <!-- Allow additional schemas from child layouts (e.g., BlogPosting for blog posts) -->
 <slot name="schema" />
@@ -70,7 +80,10 @@ if (heroImage) {
 <meta charset="utf-8" />
 <meta name="description" content={description} />
 <meta name="web_author" content={SITE.author} />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0" />
+<meta
+	name="viewport"
+	content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0"
+/>
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 <link rel="canonical" href={canonical} />
 
@@ -96,9 +109,17 @@ if (heroImage) {
 
 <!-- Favicons -->
 <!-- Use [RealFaviconGenerator.net](https://realfavicongenerator.net/) -->
-<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png" />
-<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png?v1" />
-<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png" />
+<link
+	rel="icon"
+	type="image/png"
+	href="/assets/favicons/favicon-96x96.png"
+	sizes="96x96"
+/>
+<link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg" />
+<link rel="shortcut icon" href="/assets/favicons/favicon.ico" />
+<link
+	rel="apple-touch-icon"
+	sizes="180x180"
+	href="/assets/favicons/apple-touch-icon.png"
+/>
 <link rel="manifest" href="/assets/favicons/site.webmanifest" />
-<meta name="msapplication-TileColor" content="#da532c" />
-<meta name="theme-color" content="#ffffff" />
